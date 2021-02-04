@@ -1,0 +1,50 @@
+.box {
+  height: 35%;
+  width: 35%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto auto auto auto;
+  background-color: black;
+  padding: 5px;
+}
+
+.grid-item, .grid-item-display {
+  background-color: gray;
+  border: 0.5px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 20px;
+  text-align: center;
+  color: white;
+}
+
+.grid-item:hover {
+  color: black;
+  border-color: white;
+}
+
+#zero, #clear {
+  grid-column: auto / span 2;
+}
+
+#equals {
+  color: red;
+}
+
+#calculation {
+  grid-column: auto / span 4;
+  text-align: right;
+  background-color: black;
+}
+
+#expression {
+  color: orange;
+}
+
+#display {
+  font-size: 40px;
+}
